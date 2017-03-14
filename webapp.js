@@ -101,7 +101,18 @@ case "bread/sword":
 
 case "Checkpoint1":
 case "bread":
+			bread = true;
+			story = "You notice a long hallway leading out of the cave. When you reach the end of the hallway, you are met with two doors. One is bright green and earthy, surrounded by vines. A cool breeze wafts from the crack beneath it. The other is black as coal, and is strangled with dried, withering tree branches. Intense heat flames from it. Which door will you choose?";
+			btn1 = document.createElement("BUTTON");
+			btn1.setAttribute("onClick", "displayStory('door1')");
+			btn1.innerHTML = "Door 1";
+			btn2 = document.createElement("BUTTON");
+			btn2.setAttribute("onClick", "displayStory('door2')");
+			btn2.innerHTML = "Door 2";
+			//image = "";
+			break;
 case "sword":
+			sword = true;
 			story = "You notice a long hallway leading out of the cave. When you reach the end of the hallway, you are met with two doors. One is bright green and earthy, surrounded by vines. A cool breeze wafts from the crack beneath it. The other is black as coal, and is strangled with dried, withering tree branches. Intense heat flames from it. Which door will you choose?";
 			btn1 = document.createElement("BUTTON");
 			btn1.setAttribute("onClick", "displayStory('door1')");
@@ -115,7 +126,7 @@ case "sword":
 		
 //door 1	
 case "door1":
-			if (bread) {
+			if(bread) {
 				story = "You turn the mahogany handle of the door. You emerge on a hill surrounded by rolling fields. Down the hill, peasants drenched in sweat and dressed in faded rags labor away, picking some kind of pale blue cotton. Cruel-faced supervisors pace behind them, watching their work and carrying sharp-looking batons. You walk down the hill, hoping that your own tattered clothes will blend in with theirs. You come to an area where no supervisors seem to be watching. You chose the BREAD. The people have hunger-hollowed cheeks, so you give them some of your bread. They immediately trust you, and allow you to work beside them and hide yourself. The few people near you now trust you, and they decide to help conceal you. The supervisor arrives to monitor your laboring progress and begins taunting those beside you. Will you stand up to the supervisor or make friends with him";
 				btn1 = document.createElement("BUTTON");
 				btn1.setAttribute("onClick", "displayStory('makeFriends')");
