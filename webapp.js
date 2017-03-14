@@ -277,7 +277,7 @@ case "fightHood":
 			
 case "Checkpoint4":			
 case "hideFromHood":
-			story = "You dive behind a thick pipe, and Alec follows quickly. The figure begins to whisper excitedly about someting and you feel compelled to stay hidden and listen in on the conversation. You learn about a mysterious phenomenon called the Silver arrow and when the figures retreaat into the darkness, you question Alec about this discovery.";
+			story = "You dive behind a thick pipe, and Alec follows quickly. The figure begins to whisper excitedly about someting and you feel compelled to stay hidden and listen in on the conversation. You learn about a mysterious phenomenon called the Silver arrow and when the figures retreat into the darkness, you question Alec about this discovery.";
 			btn1 = document.createElement("BUTTON");
 			btn1.setAttribute("onClick", "displayStory('threatenAlec')");
 			btn1.innerHTML = "Threaten Alec";
